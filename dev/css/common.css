@@ -257,9 +257,10 @@
     z-index: 11;
   }
 
-  #main-visual > img {
+  #main-visual > #main-message > #img-pc > img {
     position: relative;
     display: block;
+    z-index: 49;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
@@ -274,6 +275,7 @@
     position: absolute;
     top: 115px;
     display: block;
+    z-index: 51;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
@@ -286,6 +288,7 @@
     position: absolute;
     top: 210px;
     display: block;
+    z-index: 51;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
@@ -668,14 +671,6 @@
     z-index: 11;
   }
 
-  #main-visual > img {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 767px;
-    z-index: 49;
-  }
-
   #img-sp {
     position: relative;
     display: flex;
@@ -684,10 +679,20 @@
     max-width: 767px;
   }
 
+  #main-visual > #main-message > #img-sp > img {
+    position: relative;
+    display: block;
+    z-index: 49;
+    width: 100%;
+    max-width: 767px;
+    z-index: 49;
+  }
+
   #main-message > h1 {
     position: absolute;
     top: 40px;
     display: block;
+    z-index: 51;
     width: 100%;
     max-width: 767px;
     margin: 0 auto;
@@ -699,6 +704,7 @@
     position: absolute;
     top: 85px;
     display: block;
+    z-index: 51;
     width: 100%;
     max-width: 767px;
     margin: 0 auto;
