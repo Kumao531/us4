@@ -273,7 +273,7 @@
 
   #main-message > h1 {
     position: absolute;
-    top: 115px;
+    top: 12.0rem;
     display: block;
     z-index: 51;
     width: 100%;
@@ -286,7 +286,7 @@
 
   #main-message > p {
     position: absolute;
-    top: 210px;
+    top: 17.0rem;
     display: block;
     z-index: 51;
     width: 100%;
