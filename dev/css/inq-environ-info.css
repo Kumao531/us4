@@ -31,41 +31,54 @@
     min-width: 95%;
     max-width: 95%;
     margin: 0 auto 0 auto;
-    padding-bottom: 1.0rem;
+    padding-bottom: 2.0rem;
 /*    background-color:lightblue;*/
   }
-    #information-area > h3 {
+  #information-area > h3 {
     margin: 0;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0 0;
   }
 
-  #company-info {
+  #environ-info {
+    display: block;
     margin-left: 2.0rem;
   }
 
-  .information {
+  #description {
     position: relative;
-    display: flex;
-  }
-  .information > .label {
-    width: 20%;
-    margin: 0;
-  }
-  .information > .label > p {
-    margin: 0;
-    padding: 0.2rem 0;
-  }
-  .information > .mention {
-    margin: 0;
-  }
-  .information > .mention > p {
-    margin: 0;
-    padding: 0.2rem 0;
+    display: block;
+    margin: 0 0 0 0;
+    padding-left: 2.0rem;
   }
 
-  /* フッター */
-  #footer-belt-pc {
-    height: 350px;
+  #image-area {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0;
+    padding-bottom: 1.0rem;
+  }
+  #image-area > img {
+    width: 100%;
+  }
+
+  .office {
+    display: block;
+  }
+  .office > h4 {
+    margin: 0;
+    padding: 1.0rem 0 0 0;
+  }
+
+  .environ {
+    display: block;
+    margin: 0;
+    padding-left: 2.0rem;
+  }
+  .environ > p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8rem;
   }
 
 }
@@ -91,7 +104,6 @@
     line-height: 1.3rem;
     font-weight: 600;
     color: #7c7c7c;
-    text-shadow: 1px 1px 1px #eaeaea;
   }
 
   /* コンテンツ主部 */
@@ -102,41 +114,55 @@
     width: 95%;
     min-width: 95%;
     max-width: 95%;
-    margin: 0 auto 0 auto;
-    padding-bottom: 1.0rem;
-    background-color:lightblue;
+    margin: 0 auto  auto;
+    padding-bottom: 2.0rem;
+/*    background-color:lightblue;*/
   }
   #information-area > h3 {
     margin: 0;
     padding: 0.5rem 0 0 0;
   }
 
-  #company-info {
-    position: relative;
+  #environ-info {
     display: block;
-    margin-left: 1.0rem;
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 
-  .information {
+  #description {
     position: relative;
     display: block;
-    margin: 0 0.3rem 0 0;
+    margin: 0 0 0 0;
+    padding-left: 1.0rem;
   }
-  .information > .label {
+
+  #image-area {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
     margin: 0;
+    padding-bottom: 1.0rem;
   }
-  .information > .label > p {
+  #image-area > img {
+    width: 100%;
+  }
+
+  .office {
+    display: block;
+  }
+  .office > h4 {
     margin: 0;
     padding: 1.0rem 0 0 0;
   }
-  .information > .mention {
+
+  .environ {
+    display: block;
     margin: 0;
-    padding: 0 0 0 0.5rem;
+    padding-left: 1.0rem;
   }
-  .information > .mention > p {
+  .environ > p {
     margin: 0;
-    padding: 0.1rem 0 0 0;
+    padding: 0 0.5rem 0 0;
+    line-height: 1.4rem;
   }
 
 }

@@ -36,36 +36,34 @@
   }
     #information-area > h3 {
     margin: 0;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0 0;
   }
 
-  #company-info {
+  #office-info {
+    display: block;
     margin-left: 2.0rem;
   }
 
-  .information {
+  .office {
     position: relative;
-    display: flex;
-  }
-  .information > .label {
-    width: 20%;
+    display: block;
     margin: 0;
-  }
-  .information > .label > p {
-    margin: 0;
-    padding: 0.2rem 0;
-  }
-  .information > .mention {
-    margin: 0;
-  }
-  .information > .mention > p {
-    margin: 0;
-    padding: 0.2rem 0;
+    padding-bottom: 1.5rem;
   }
 
-  /* フッター */
-  #footer-belt-pc {
-    height: 350px;
+  .label > h4 {
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .address {
+    margin: 0;
+    padding-bottom: 0.5rem
+  }
+  .address > p {
+    margin: 0 0 0 2.0rem;
+    padding: 0 0;
+    line-height: 1.8rem;
   }
 
 }
@@ -91,7 +89,6 @@
     line-height: 1.3rem;
     font-weight: 600;
     color: #7c7c7c;
-    text-shadow: 1px 1px 1px #eaeaea;
   }
 
   /* コンテンツ主部 */
@@ -104,39 +101,38 @@
     max-width: 95%;
     margin: 0 auto 0 auto;
     padding-bottom: 1.0rem;
-    background-color:lightblue;
+/*    background-color:lightblue;*/
   }
   #information-area > h3 {
     margin: 0;
     padding: 0.5rem 0 0 0;
   }
 
-  #company-info {
-    position: relative;
+  #office-info {
     display: block;
-    margin-left: 1.0rem;
-    margin-right: 0.5rem;
+    margin-left: 1.0em;
   }
 
-  .information {
+  .office {
     position: relative;
     display: block;
-    margin: 0 0.3rem 0 0;
-  }
-  .information > .label {
     margin: 0;
+    padding-bottom: 1.0rem;
   }
-  .information > .label > p {
+
+  .label > h4 {
     margin: 0;
-    padding: 1.0rem 0 0 0;
+    padding: 1.5rem 0 0 0;
   }
-  .information > .mention {
-    margin: 0;
-    padding: 0 0 0 0.5rem;
+
+  .address {
+    margin-top: 0.2rem;
+    padding-bottom: 0.2rem
   }
-  .information > .mention > p {
-    margin: 0;
-    padding: 0.1rem 0 0 0;
+  .address > p {
+    margin: 0 0 0 1.0rem;
+    padding: 0.4rem 1.0rem 0 0;
+    line-height: 1.2rem;
   }
 
 }

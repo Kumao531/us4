@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
-
   <head>
-    <title>ミカゲＩＴラボ ｜About US | 企業情報</title>
+    <title>ミカゲＩＴラボ ｜About US | 開発環境</title>
     <meta charset="UTF-8">
-    <meta name="description" content="ミカゲＩＴラボの企業情報です。">
+    <meta name="description" content="ミカゲＩＴラボの開発環境です。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 既定のCSS定義された定義をクリアリングする -->
@@ -14,7 +13,7 @@
     <link rel="stylesheet" href="./css/common.css">
 
     <!-- このHTML固有のCSS読み込み -->
-    <link rel="stylesheet" href="./css/inq-company-info.css">
+    <link rel="stylesheet" href="./css/inq-environ-info.css">
   </head>
 
   <body>
@@ -61,77 +60,65 @@
 
       <article>
 
-        <!-- 企業情報 -->
+        <!-- オフィス情報 -->
         <section id="main-description">
 
           <div id="information-area">
 
-            <h3>企業情報</h3>
+            <h3>開発・テスト環境</h3>
 
-            <div id="company-info">
+            <div id="environ-info">
 
-              <!-- 会社名称 -->
-              <div id="company" class="information">
-                <div class="label">
-                  <p>会社名称</p>
-                </div>
-                <div class="mention">
-                  <p>ミカゲＩＴラボ行動会社（予定）</p>
-                </div>
-              </div>
+              <h4>システム概要</h4>
 
-              <!-- 会社名称かな -->
-              <div id="kana" class="information">
-                <div class="label">
-                  <p>会社名称かな</p>
-                </div>
-                <div class="mention">
-                  <p>みかげあいてぃらぼ（予定）</p>
-                </div>
-              </div>
+              <div id="description">
 
-                <!-- 所在地 -->
-                <div id="jusho" class="information">
-                  <div class="label">
-                    <p>所在地</p>
-                  </div>
-                  <div class="mention">
-                    <p>神奈川県横浜市都筑区茅ヶ崎一丁目１番５－５０３（予定）</p>
+                <!-- システム構成図 -->
+                <div id="image-area">
+                  <img src="./images/Page-aboutus/system.jpg" alt="システム構成図" />
+                </div>
+
+                <!-- 横浜事業所 -->
+                <div id="yokohama" class="office">
+                  <h4>横浜事業所</h4>
+                  <div class="environ">
+                    <p>開発機（Linux/Windows/Mac）</p>
+                    <p>開発機（AI開発環境[機械学習/ニューラルネットワーク]）</p>
                   </div>
                 </div>
 
-                <!-- 法人登記番号 -->
-                <div id="registration" class="information">
-                  <div class="label">
-                    <p>法人登記番号</p>
-                  </div>
-                  <div class="mention">
-                    <p>（創業準備中未登記のためなし）</p>
+                <!-- 神戸サテライト -->
+                <div id="kobe" class="office">
+                  <h4>神戸サテライト</h4>
+                  <div class="environ">
+                    <p>開発機（Windows/Mac）</p>
                   </div>
                 </div>
 
-                <!-- 取引先金融機関 -->
-                <div id="bank" class="information">
-                  <div class="label">
-                    <p>取引先金融機関</p>
-                  </div>
-                  <div class="mention">
-                    <p>（未定）</p>
+                <!-- クラウド環境 -->
+                <div id="cloud" class="office">
+                  <h4>クラウド環境</h4>
+                  <div class="environ">
+                    <p>Amazon Web Services（AWS）</p>
+                    <p>Microsoft OneDrive</p>
+                    <p>Apple iCloud</p>
                   </div>
                 </div>
 
-                <!-- 会計事務所 -->
-                <div id="account-firm" class="information">
-                  <div class="label">
-                    <p>会計事務所</p>
-                  </div>
-                  <div class="mention">
-                    <p>（未定）</p>
+                <!-- レンタル・サーバー -->
+                <div id="rental-servers" class="office">
+                  <h4>外部サーバー</h4>
+                  <div class="environ">
+                    <p>Webテスト環境（A社[関東]）</p>
+                    <p>Windows Server開発・テスト環境（B社[関西]）</p>
                   </div>
                 </div>
 
               </div>
+
             </div>
+
+          </div>
 
         </section>
 
