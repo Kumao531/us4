@@ -85,7 +85,13 @@
     display: block;
     margin: 0 0 0 0;
     padding: 0 2.0rem 0.8rem 1.0rem;
-    line-height: 1.4rem;
+    line-height: 1.7rem;
+  }
+  .service-explain > ul {
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0.5rem 3.0rem;
   }
 
 }
@@ -181,4 +187,11 @@
     padding: 0 0.5rem 0.5rem 1.0rem;
     line-height: 1.5rem;
   }
+  .service-explain > ul {
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0.5rem 3.0rem;
+  }
+
 }
