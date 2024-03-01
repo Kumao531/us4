@@ -32,38 +32,36 @@
     max-width: 95%;
     margin: 0 auto 0 auto;
     padding-bottom: 1.0rem;
-    background-color:lightblue;
+/*    background-color:lightblue;*/
   }
     #information-area > h3 {
     margin: 0;
     padding: 0.5rem 0 0 0;
   }
 
-  #office-info {
-    display: block;
-    margin-left: 2.0rem;
-  }
-
-  .office {
+  #motto {
     position: relative;
     display: block;
-    margin: 0;
-    padding-bottom: 1.5rem;
+    margin: 0 0 0 0;
+    padding: 2.0rem 0 0 2.0rem;
+  }
+  #motto > p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 1.5rem;
   }
 
-  .label > h4 {
-    margin: 0;
-    padding: 1.5rem 0 0 0;
+  #motto-description {
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 3.0rem 0 2.0rem 2.0rem;
   }
-
-  .address {
-    margin: 0;
-    padding-bottom: 0.5rem
-  }
-  .address > p {
-    margin: 0 0 0 2.0rem;
-    padding: 0 0;
-    line-height: 1.8rem;
+  #motto-description > p {
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
 
 }
@@ -101,38 +99,36 @@
     max-width: 95%;
     margin: 0 auto 0 auto;
     padding-bottom: 1.0rem;
-    background-color:lightblue;
+/*    background-color:lightblue;*/
   }
   #information-area > h3 {
     margin: 0;
     padding: 0.5rem 0 0 0;
   }
 
-  #office-info {
-    display: block;
-    margin-left: 1.0em;
-  }
-
-  .office {
+  #motto {
     position: relative;
     display: block;
-    margin: 0;
-    padding-bottom: 1.0rem;
+    margin: 0 0 0 0;
+    padding: 2.0rem 0 0 2.0rem;
+  }
+  #motto > p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 1.2rem;
   }
 
-  .label > h4 {
-    margin: 0;
-    padding: 1.5rem 0 0 0;
+  #motto-description {
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 3.0rem 0 2.0rem 1.5rem;
   }
-
-  .address {
-    margin-top: 0.2rem;
-    padding-bottom: 0.2rem
-  }
-  .address > p {
-    margin: 0 0 0 1.0rem;
-    padding: 0.4rem 1.0rem 0 0;
-    line-height: 1.2rem;
+  #motto-description > p {
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
 
 }

@@ -115,6 +115,16 @@
     padding: 0  1.0rem 3.0rem;
   }
 
+  #hanazono {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+  }
+  #hanazono > img {
+    width: 100%;
+  }
 }
 
 /****************************************************/
@@ -243,6 +253,25 @@
   #describe > ul > li {
     margin: 0;
     padding: 0 0 0.3rem 0;
+  }
+
+  #hobby-description {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 2.0rem 0 0;
+    padding: 0 0 0 0;
+  }
+
+  #hanazono {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 0 2.0rem 0 0;
+    padding: 0 0 0 0;
+  }
+  #hanazono > img {
+    width: 100%;
   }
 
 }

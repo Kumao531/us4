@@ -94,6 +94,11 @@
     padding: 0 0 0.5rem 3.0rem;
   }
 
+  .text-indent-1 {
+    margin-left: 2.0rem;
+    text-indent: -2.0rem;
+  }
+
 }
 
 /****************************************************/
