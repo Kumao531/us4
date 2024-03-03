@@ -38,31 +38,32 @@
     display: block;
     width: 100%;
     min-width: 748px;
-    max-width: 748px;
-    margin: auto;
-    padding: 0 10px;
-  }
-
-  #introduction > h2 {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-width: 786px;
-    max-width: 786px;
-    margin: 0 auto 0 auto;
-    padding: 20px 10px 0 0;
-  }
-
-  #introduction > p {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-width: 768px;
     max-width: 1080px;
-    min-width: calc( 768px - 15px - 40px );
-    max-width: calc( 768px - 15px - 40px );
-    margin: 0 auto 0 auto;
-    padding: 15px 15px 0 20px;
+    margin: 0 10.0rem 0 1.0rem;
+    padding: 0 0 0 0;
+  }
+
+  #intro-pc > h2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  #intro-pc > p {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 4.0rem 0 2.0rem;
+    padding: 0 0 0 0;
+  }
+
+  #summary-explain {
+    position: relative;
+    display: block;
+    margin: 1.0rem 0 0 1.5rem;
+    padding: 0 0 0 0;
   }
 
   h3::after {

@@ -36,7 +36,7 @@
     width: 100%;
     max-width: 1080px;
     margin: 0 auto 0 auto;
-    background-color:#e7ffff;
+/*    background-color:#e7ffff;*/
   }
 
   #anchor-group {
@@ -141,7 +141,7 @@
   #anchor-area {
     width: 100%;
     margin: 0 auto 0 auto;
-    background-color:#e7ffff;
+/*    background-color:#e7ffff;*/
   }
 
   #anchor-group {
@@ -189,13 +189,12 @@
   #trademark-description {
     width: 100%;
     margin: 0 auto 0 auto;
-    background-color:aquamarine;
+/*    background-color:aquamarine;*/
   }
 
   /*トレードマーク*/
   #trademark-image {
     width: 35%;
-
   }
   #trademark-image > img {
     width: 100%;

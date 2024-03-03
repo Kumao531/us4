@@ -4,7 +4,7 @@
 
   #main-message > h1 {
     font-size: 3rem;
-    color:#5e5e5e;
+    color:#89ceda;
     text-shadow:
       0 2px 0 #eaeaea,
       0 2px 4px #100a0a;
@@ -14,7 +14,7 @@
     line-height: 2.0rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #5e5e5e;
+    color: #89ceda;
     text-shadow: 1px 1px 1px #eaeaea;
   }
 
@@ -111,6 +111,12 @@
     line-height: 1.9rem;
     text-align: center;
   }
+
+  /* フッターの高さの調整 */
+  #footer-belt-pc {
+    height: 350px;
+  }
+
 
 }
 
