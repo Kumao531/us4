@@ -1,22 +1,118 @@
 @media screen and (min-width: 768px) {
 
-  /* メインビジュアルに表示する文字の調整 */
+  /* カルーセル */
+  /* スマホ用ナビを非表示 */
+  #sp-carousel {
+    display: none;
+  }
 
-  #main-message > h1 {
-    font-size: 3rem;
+  .carousel-area {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+  }
+
+  .carousel-plate {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+  }
+
+  .image-area-01 {
+    position: relative;
+    display: block;
+    z-index: 49;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    opacity: 0.2;
+  }
+  .image-area-01 > a > img {
+    width: 100%;
+  }
+
+  .image-area-02 {
+    position: absolute;
+    display: block;
+    z-index: 50;
+    top: 27%;
+    left: 5%;
+    width: 25%;
+  }
+  .image-area-02 > a > img {
+    border: 1px;
+    border-style: ridge;
+    border-color: #8f8f8f;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .title-area {
+    position: absolute;
+    display: block;
+    z-index: 51;
+    top: 30%;
+    left: 35%;
+  }
+  .title-area > p {
+    font-size: 3.0rem;
+    font-family: "Noto Sans JP";
+    font-weight: 700;
     color: #161212;
     text-shadow:
       0 2px 0 #c7c7c7,
       0 2px 4px #100a0a;
   }
 
-  #main-message > p {
+  /* メインビジュアルに表示する文字の調整 */
+
+  .main-visual {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    z-index: 11;
+  }
+  .main-visual > img {
+    width: 100%;
+  }
+  .main-visual > h1 {
+    position: absolute;
+    display: block;
+    z-index: 51;
+    top: 11.0rem;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: 3.0rem;
+    text-align: center;
+    color: #161212;
+    text-shadow:
+      0 1px 0 #c7c7c7,
+      0 1px 1px #100a0a;
+  }
+  .main-visual > p {
+    position: absolute;
+    display: block;
+    top: 16.5rem;
+    z-index: 51;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    margin: 0 auto;
     line-height: 2.0rem;
     font-size: 1.25rem;
     font-weight: 600;
     color: #161212;
-    text-shadow: 2px 2px 11px white;
+    text-shadow: 0.3rem 0.3rem 0.5rem white;
   }
+
 
   /* コンテンツ主部 */
 
@@ -72,6 +168,7 @@
 
   .left-mention > .image-area > img {
     width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   }
 
   /* 右側に文章がある構造 */
@@ -93,6 +190,7 @@
 
   .right-mention > .image-area > img {
     width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   }
 
   .right-mention > .partition {
@@ -127,6 +225,14 @@
     margin:  1.0rem;
   }
 
+  /* 先頭に戻る */
+  .retuen-top {
+    position: relative;
+    display: block;
+    margin: 0 3.0rem 0 0;
+    text-align: right;
+  }
+
 }
 
 /****************************************************/
@@ -135,17 +241,109 @@
 
 @media screen and (max-width: 767px) {
 
-    /* メインビジュアルに表示する文字の調整 */
-
-  #main-message > h1 {
-    font-size: 1.8rem;
-    color: #161212;
-    text-shadow:
-      0 2px 0 #c7c7c7,
-      0 2px 4px #100a0a;
+  /* カルーセル */
+  /* PC用ナビを非表示 */
+  #pc-carousel {
+    display: none;
   }
 
-  #main-message > p {
+ #sp-carousel {
+    position:relative;
+    display: block;
+    width: 100%;
+  }
+  .carousel-area {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .carousel-plate {
+    position: relative;
+    display: block;
+    width: 100%;
+ }
+
+  .image-area-01 {
+    position: relative;
+    display: block;
+    z-index: 49;
+    width: 100%;
+    opacity: 0.2;
+  }
+  .image-area-01 > a > img {
+    width: 100%;
+  }
+
+  .image-area-02 {
+    position: absolute;
+    display: block;
+    z-index: 50;
+    top: 27%;
+    left: 5%;
+    width: 25%;
+  }
+  .image-area-02 > a > img {
+    border: 1px;
+    border-style: ridge;
+    border-color: #8f8f8f;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .title-area {
+    position: absolute;
+    display: block;
+    z-index: 51;
+    top: 30%;
+    left: 39%;
+  }
+  .title-area > p {
+    font-size: 1.5rem;
+    font-family: "Noto Sans JP";
+    font-weight: 700;
+    color: #161212;
+    text-shadow:
+      0 1px 0 #c7c7c7,
+      0 1px 1px #100a0a;
+  }
+
+  /* メインビジュアルの枠と表示する文字の調整 */
+
+  .main-visual {
+    position: relative;
+    display: block;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    max-width: 767px;
+    text-align: center;
+    z-index: 11;
+  }
+  .main-visual > img {
+    width: 100%;
+  }
+  .main-visual > h1 {
+    position: absolute;
+    display: block;
+    z-index: 51;
+    top: 40px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #161212;
+    text-shadow:
+      0 1px 0 #c7c7c7,
+      0 1px 1px #100a0a;
+  }
+  .main-visual > p {
+    position: absolute;
+    display: block;
+    top: 85px;
+    z-index: 51;
+    width: 100%;
+    margin: 0 auto;
     font-size: 0.9rem;
     line-height: 1.2rem;
     font-weight: 600;
@@ -208,6 +406,7 @@
 
   .left-mention > .image-area > img {
     width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   }
 
   /* 右側に文章がある構造 */
@@ -230,6 +429,7 @@
 
   .right-mention > .image-area > img {
     width: 40%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   }
 
   .right-mention > .partition {
@@ -262,6 +462,14 @@
 
   .p-future {
     margin:  1.0rem;
+  }
+
+  /* 先頭に戻る */
+  .retuen-top {
+    position: relative;
+    display: block;
+    margin: 0 1.0rem 0 0;
+    text-align: right;
   }
 
 }

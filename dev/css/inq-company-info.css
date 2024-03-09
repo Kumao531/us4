@@ -63,7 +63,15 @@
     padding: 0.2rem 0;
   }
 
-  /* フッター */
+  /* 地図 */
+  #map {
+    position: relative;
+    display: block;
+    margin: 0 0 2rem 2rem;
+    padding: 0 0 0 0;
+  }
+
+  /* フッター補正 */
   #footer-belt-pc {
     height: 350px;
   }
@@ -104,7 +112,7 @@
     max-width: 95%;
     margin: 0 auto 0 auto;
     padding-bottom: 1.0rem;
-    background-color:lightblue;
+/*    background-color:lightblue;*/
   }
   #information-area > h3 {
     margin: 0;
@@ -139,4 +147,12 @@
     padding: 0.1rem 0 0 0;
   }
 
+  /* 地図 */
+  #map {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+  }
 }

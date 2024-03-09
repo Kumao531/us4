@@ -1,3 +1,7 @@
+/****************************************************/
+/* PC用スタイル                                     */
+/****************************************************/
+
 @media screen and (min-width: 768px) {
 
   /* コンテンツ主部 */
@@ -57,7 +61,37 @@
     padding: 1rem 0 2rem 1rem;
   }
 
+  /* 入力域の体裁 */
+  /* テキストボックス */
+  .contact-textbox {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    height: 56px;
+  }
+  /* お問い合わせ内容のテキストエリア */
+  .contact-textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    height: 200px;
+  }
+
 }
+
+/****************************************************/
+/* スマートフォン用スタイル                         */
+/****************************************************/
 
 @media screen and (max-width: 767px) {
 
@@ -123,6 +157,32 @@
   .send-btn {
     margin: 0;
     padding: 1rem 0 2rem 1rem;
+  }
+
+  /* 入力域の体裁 */
+  /* テキストボックス */
+  .contact-textbox {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 90%;
+    height: 56px;
+  }
+  /* お問い合わせ内容のテキストエリア */
+  .contact-textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 90%;
+    height: 300px;
   }
 
 }

@@ -260,7 +260,6 @@
   #main-visual > #main-message > #img-pc > img {
     position: relative;
     display: block;
-    z-index: 49;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
@@ -273,7 +272,7 @@
 
   #main-message > h1 {
     position: absolute;
-    top: 160px;
+    top: 11.0rem;
     display: block;
     z-index: 51;
     width: 100%;
@@ -281,12 +280,11 @@
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
-    z-index: 51;
   }
 
   #main-message > p {
     position: absolute;
-    top: 240px;
+    top: 16.5rem;
     display: block;
     z-index: 51;
     width: 100%;

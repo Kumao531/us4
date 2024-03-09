@@ -77,153 +77,157 @@
         <section>
           <div id="inquiry-area">
 
-            <!-- 名前 -->
-            <div id="name" class="oneline-query">
-              <div class="label">
-                <p>名前<spam class="empasis-phrase"> 必須</spam>：</p>
-              </div>
-              <div class="query">
-                <input id="username-obj" type="text" name="username" size="12" />
-              </div>
-            </div>
+            <form>
 
-            <!-- 性別 -->
-            <div id="sex" class="manyline-query">
-              <div class="label">
-                <p>性別<spam class="empasis-phrase"> 必須</spam>：</p>
-              </div>
-              <div class="query">
-                <input type="radio" name="sex" value="male"><spam>男性　</spam>
-                <input type="radio" name="sex" value="female"><spam>女性　</spam>
-                <input type="radio" name="sex" value="other"><spam>その他　</spam>
-              </div>
-            </div>
-
-            <!-- 電話番号 -->
-            <div id="tel" class="oneline-query">
-              <div class="label">
-                <p>電話番号：</p>
-              </div>
-              <div class="query">
-                <input type="text" name="tel" size="13" placeholder="090-1234-5678" />
-              </div>
-            </div>
-
-            <!-- 電子メール -->
-            <div id="mail" class="oneline-query">
-              <div class="label">
-                <p>電子メール<spam class="empasis-phrase"> 必須</spam>：</p>
-              </div>
-              <div class="query">
-                <input type="text" name="email" size="28" placeholder="username@example.com" />
-              </div>
-            </div>
-
-            <!-- どこで知りました？ -->
-            <div id="where" class="manyline-query">
-              <div class="label">
-                <p>どこでミカゲＩＴラボを知りましたか？<spam class="empasis-phrase"> 1つ以上選択</spam></p>
-              </div>
-              <!-- PC用表示 -->
-              <div class="pc-query" class="query">
-                <div class="select-query">
-                  <input type="checkbox" name="whereis" value="家族">
-                  <spam class="chk-spam">家族から　　</spam>
-                  <input type="checkbox" name="whereis" value="知人">
-                  <spam class="chk-spam">知人から　　</spam>
-                  <input type="checkbox" name="whereis" value="クチコミ">
-                  <spam class="chk-spam">クチコミから</spam>
+              <!-- 名前 -->
+              <div id="name" class="oneline-query">
+                <div class="label">
+                  <p>名前<spam class="empasis-phrase"> 必須</spam>：</p>
                 </div>
-                <div class="select-query">
-                  <input type="checkbox" name="whereis" value="ネット検索">
-                  <spam class="chk-spam">ネットを検索して　</spam>
-                  <input type="checkbox" name="whereis" value="ネット記事">
-                  <spam class="chk-spam">ネットの記事から　</spam>
-                  <input type="checkbox" name="whereis" value="SNS">
-                  <spam class="chk-spam">SNSで見かけた　</spam><br>
-                  <input type="checkbox" name="whereis" value="他サイト">
-                  <spam class="chk-spam">ほかのサイトで知った</spam>
-                </div>
-                <div class="select-query">
-                  <input type="checkbox" name="whereis" value="雑誌">
-                  <spam class="chk-spam">雑誌で見た　　</spam>
-                  <input type="checkbox" name="whereis" value="ネット広告">
-                  <spam class="chk-spam">インターネット広告　　</spam>
-                  <input type="checkbox" name="whereis" value="ダイレクト">
-                  <spam class="chk-spam">ダイレクト・メール</spam>
-                </div>
-              </div>
-              <!-- スマフォ用表示 -->
-              <div class="sp-query" class="query">
-                <div class="select-query">
-                  <input type="checkbox" name="whereis" value="家族">
-                  <spam class="chk-spam">家族から　　</spam>
-                  <input type="checkbox" name="whereis" value="知人">
-                  <spam class="chk-spam">知人から　　</spam><br>
-                  <input type="checkbox" name="whereis" value="クチコミ">
-                  <spam class="chk-spam">クチコミから</spam>
-                  <input type="checkbox" name="whereis" value="ネット検索">
-                  <spam class="chk-spam">ネットを検索して　</spam><br>
-                  <input type="checkbox" name="whereis" value="ネット記事">
-                  <spam class="chk-spam">ネットの記事から　</spam>
-                  <input type="checkbox" name="whereis" value="SNS">
-                  <spam class="chk-spam">SNSで見かけた　</spam><br>
-                  <input type="checkbox" name="whereis" value="他サイト">
-                  <spam class="chk-spam">ほかのサイトで知った</spam>
-                  <input type="checkbox" name="whereis" value="雑誌">
-                  <spam class="chk-spam">雑誌で見た　　</spam><br>
-                  <input type="checkbox" name="whereis" value="ネット広告">
-                  <spam class="chk-spam">インターネット広告　　</spam><br>
-                  <input type="checkbox" name="whereis" value="ダイレクト">
-                  <spam class="chk-spam">ダイレクト・メール</spam>
+                <div class="query">
+                  <input id="username-obj" type="text" name="username" size="12" placeholder="入力してください..." class="contact-textbox" />
                 </div>
               </div>
 
-            </div>
-
-            <!-- お問い合わせの種類 -->
-            <div id="sort" class="manyline-query">
-              <div class="label">
-                <p>お問い合わせの種類<spam class="empasis-phrase"> 必須</spam>：</p>
-              </div>
-              <div class="query">
-                <select name="inquiry-purpose">
-                  <option value="問合せ">お問い合わせ</option>
-                  <option value="要望">ご要望</option>
-                  <option value="意見">ご意見</option>
-                  <option value="感想">ご感想</option>
-                  <option value="その他">その他</option>
-                </select>
-              </div>
-              <div id="purpose-other" class="label">
-                <p>「その他」を選ばれたときにはご入力ください<spam class="empasis-phrase"> 40文字以内</spam></p>
-              </div>
-              <div class="query">
-                <input type="text" name="other-inquiry" size="40" placeholder="その他お問合せの目的..." />
-              </div>
-            </div>
-
-            <!-- お問い合わせの内容 -->
-            <div id="query-content" class="manyline-query">
-              <div class="label">
-                <p>【お問い合わせの内容】<spam class="empasis-phrase">必須　800文字以内</spam></p>
-              </div>
-              <div class="query">
-                <div class="pc-query">
-                  <textarea class="inquiry-is" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="80"
-                    rows="10"></textarea>
+              <!-- 性別 -->
+              <div id="sex" class="manyline-query">
+                <div class="label">
+                  <p>性別<spam class="empasis-phrase"> 必須</spam>：</p>
                 </div>
-                <div class="sp-query">
-                  <textarea class="inquiry-is" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="40"
-                    rows="20"></textarea>
+                <div class="query">
+                  <input type="radio" name="sex" value="male"><spam>男性　</spam>
+                  <input type="radio" name="sex" value="female"><spam>女性　</spam>
+                  <input type="radio" name="sex" value="other"><spam>その他　</spam>
                 </div>
               </div>
-            </div>
 
-            <!-- 問合せ送信ボタン -->
-            <div class="send-btn">
-              <input id="check-btn" type="button" value="送信" />
-            </div>
+              <!-- 電話番号 -->
+              <div id="tel" class="oneline-query">
+                <div class="label">
+                  <p>電話番号：</p>
+                </div>
+                <div class="query">
+                  <input type="text" name="tel" size="13"  class="contact-textbox" placeholder="090-1234-5678" />
+                </div>
+              </div>
+
+              <!-- 電子メール -->
+              <div id="mail" class="oneline-query">
+                <div class="label">
+                  <p>電子メール<spam class="empasis-phrase"> 必須</spam>：</p>
+                </div>
+                <div class="query">
+                  <input type="text" name="email" size="28"  class="contact-textbox" placeholder="username@example.com" />
+                </div>
+              </div>
+
+              <!-- どこで知りました？ -->
+              <div id="where" class="manyline-query">
+                <div class="label">
+                  <p>どこでミカゲＩＴラボを知りましたか？<spam class="empasis-phrase"> 1つ以上選択</spam></p>
+                </div>
+                <!-- PC用表示 -->
+                <div class="pc-query" class="query">
+                  <div class="select-query">
+                    <input type="checkbox" name="whereis" value="家族">
+                    <spam class="chk-spam">家族から　　</spam>
+                    <input type="checkbox" name="whereis" value="知人">
+                    <spam class="chk-spam">知人から　　</spam>
+                    <input type="checkbox" name="whereis" value="クチコミ">
+                    <spam class="chk-spam">クチコミから</spam>
+                  </div>
+                  <div class="select-query">
+                    <input type="checkbox" name="whereis" value="ネット検索">
+                    <spam class="chk-spam">ネットを検索して　</spam>
+                    <input type="checkbox" name="whereis" value="ネット記事">
+                    <spam class="chk-spam">ネットの記事から　</spam>
+                    <input type="checkbox" name="whereis" value="SNS">
+                    <spam class="chk-spam">SNSで見かけた　</spam><br>
+                    <input type="checkbox" name="whereis" value="他サイト">
+                    <spam class="chk-spam">ほかのサイトで知った</spam>
+                  </div>
+                  <div class="select-query">
+                    <input type="checkbox" name="whereis" value="雑誌">
+                    <spam class="chk-spam">雑誌で見た　　</spam>
+                    <input type="checkbox" name="whereis" value="ネット広告">
+                    <spam class="chk-spam">インターネット広告　　</spam>
+                    <input type="checkbox" name="whereis" value="ダイレクト">
+                    <spam class="chk-spam">ダイレクト・メール</spam>
+                  </div>
+                </div>
+                <!-- スマフォ用表示 -->
+                <div class="sp-query" class="query">
+                  <div class="select-query">
+                    <input type="checkbox" name="whereis" value="家族">
+                    <spam class="chk-spam">家族から　　</spam>
+                    <input type="checkbox" name="whereis" value="知人">
+                    <spam class="chk-spam">知人から　　</spam><br>
+                    <input type="checkbox" name="whereis" value="クチコミ">
+                    <spam class="chk-spam">クチコミから</spam>
+                    <input type="checkbox" name="whereis" value="ネット検索">
+                    <spam class="chk-spam">ネットを検索して　</spam><br>
+                    <input type="checkbox" name="whereis" value="ネット記事">
+                    <spam class="chk-spam">ネットの記事から　</spam>
+                    <input type="checkbox" name="whereis" value="SNS">
+                    <spam class="chk-spam">SNSで見かけた　</spam><br>
+                    <input type="checkbox" name="whereis" value="他サイト">
+                    <spam class="chk-spam">ほかのサイトで知った</spam>
+                    <input type="checkbox" name="whereis" value="雑誌">
+                    <spam class="chk-spam">雑誌で見た　　</spam><br>
+                    <input type="checkbox" name="whereis" value="ネット広告">
+                    <spam class="chk-spam">インターネット広告　　</spam><br>
+                    <input type="checkbox" name="whereis" value="ダイレクト">
+                    <spam class="chk-spam">ダイレクト・メール</spam>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- お問い合わせの種類 -->
+              <div id="sort" class="manyline-query">
+                <div class="label">
+                  <p>お問い合わせの種類<spam class="empasis-phrase"> 必須</spam>：</p>
+                </div>
+                <div class="query">
+                  <select name="inquiry-purpose">
+                    <option value="問合せ">お問い合わせ</option>
+                    <option value="要望">ご要望</option>
+                    <option value="意見">ご意見</option>
+                    <option value="感想">ご感想</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+                <div id="purpose-other" class="label">
+                  <p>「その他」を選ばれたときにはご入力ください<spam class="empasis-phrase"> 40文字以内</spam></p>
+                </div>
+                <div class="query">
+                  <input type="text" name="other-inquiry" size="40"  class="contact-textbox" placeholder="その他お問合せの目的..." />
+                </div>
+              </div>
+
+              <!-- お問い合わせの内容 -->
+              <div id="query-content" class="manyline-query">
+                <div class="label">
+                  <p>【お問い合わせの内容】<spam class="empasis-phrase">必須　800文字以内</spam></p>
+                </div>
+                <div class="query">
+                  <div class="pc-query">
+                    <textarea class="inquiry-is contact-textarea" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="80"
+                      rows="10"></textarea>
+                  </div>
+                  <div class="sp-query">
+                    <textarea class="inquiry-is contact-textarea" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="40"
+                      rows="20"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 問合せ送信ボタン -->
+              <div class="send-btn">
+                <input id="submit" type="button" value="送信" />
+              </div>
+
+            </form>
 
           </div>
 
@@ -290,6 +294,12 @@
       </footer>
 
     </main>
+
+    <!-- JQuery読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- 入力チェック用JavaScript読み込み -->
+    <script src="./js/inquiry.js"></script>
 
   </body>
 

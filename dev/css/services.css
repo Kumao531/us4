@@ -4,18 +4,20 @@
 
   #main-message > h1 {
     font-size: 3rem;
-    color:#89ceda;
+    color:#75e828;
     text-shadow:
       0 2px 0 #eaeaea,
-      0 2px 4px #100a0a;
+      0 2px 4px #17820d;
   }
 
   #main-message > p {
     line-height: 2.0rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #89ceda;
-    text-shadow: 1px 1px 1px #eaeaea;
+    color:#75e828;
+    text-shadow:
+      0 1px 0 #eaeaea,
+      0 1px 2cm #17820d;
   }
 
   /* コンテンツ主部 */
@@ -130,18 +132,19 @@
 
   #main-message > h1 {
     font-size: 1.8rem;
-    color:#5e5e5e;
+    color:#75e828;
     text-shadow:
       0 2px 0 #eaeaea,
-      0 2px 4px #100a0a;
+      0 2px 4px #17820d;
   }
 
   #main-message > p {
     font-size: 0.9rem;
     line-height: 1.2rem;
-    font-weight: 600;
-    color: #5e5e5e;
-    text-shadow: 1px 1px 1px #eaeaea;
+    color:#75e828;
+    text-shadow:
+      0 1px 0 #eaeaea,
+      0 1px 2cm #17820d;
   }
 
   /* コンテンツ主部 */
