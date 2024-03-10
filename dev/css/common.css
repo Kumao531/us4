@@ -573,7 +573,7 @@
   }
 
   .nopadding {
-    padding: 0px !important;
+    padding: 0;
   }
 
   /*** レイアウト構造の設定 *************************/
@@ -728,7 +728,7 @@
     z-index: 49;
     width: 100%;
     max-width: 767px;
-    height: 28rem;
+    height: 27rem;
     margin: 0 auto 0 auto;
     background-color: #4b1b9a;
   }

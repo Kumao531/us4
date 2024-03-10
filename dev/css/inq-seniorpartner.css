@@ -112,13 +112,20 @@
   #describe > ul {
     display: block;
     margin: 0 0 0 0;
-    padding: 0  1.0rem 3.0rem;
+    padding: 0  1.0rem 2.0rem 3.0rem;
+    line-height: 1.7rem;
   }
+/*  #describe > ul > li {
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0.2rem 0;
+    list-style-type: disc;
+  }*/
 
   #shokureki {
     position: relative;
     display: block;
-    width: 100%;
+    width: 90%;
     margin: 0 0 0 0;
     padding: 0 0 0 0rem;
   }
@@ -138,6 +145,10 @@
   }
   .meisai > details > img {
     width: 100%;
+  }
+  #kosokoso {
+    margin: 0.5rem 0 0 2.0rem;
+    line-height: 1.6rem;
   }
 
   #hanazono {
@@ -203,7 +214,7 @@
   #pirofile-info {
     position: relative;
     display: block;
-    width: 100%;
+    width: 95%;
     margin: 0 0 0 0;
     padding: 0 0 0 2.0rem;
   }
@@ -296,7 +307,7 @@
     padding: 0 0 0 0;
   }
   #shokureki > p {
-    margin: 0 0 1.0rem 2.0rem;
+    margin: 0 0 1.0rem 1.0rem;
     padding: 0 0 0 0;
     font-size: 0.8rem;
     font-style: italic;
@@ -306,7 +317,7 @@
     position: relative;
     display: block;
     width: 100%;
-    margin: 0.3rem 0 0.5rem 2.0rem;
+    margin: 0.3rem 0 0.5rem 1.0rem;
     padding: 0 0 0 0;
   }
   .meisai {
@@ -316,11 +327,15 @@
     margin-left: -4.0rem;
     width: 160%;
   }
+  #kosokoso {
+    margin: 0.5rem 0 0 0.8rem;
+    line-height: 1.6rem;
+  }
 
   #hanazono {
     position: relative;
     display: block;
-    width: 90%;
+    width: 95%;
     margin: 0 2.0rem 0 0;
     padding: 0 0 0 0;
   }

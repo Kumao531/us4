@@ -33,6 +33,19 @@
     display: none;
   }
 
+  details {
+    position: relative;
+    display: block;
+    width: 91%;
+    line-height: 1.5rem;
+  }
+  details > summary {
+    position: relative;
+    display: block;
+    line-height: 1.5rem;
+    font-style: italic;
+  }
+
   #introduction {
     position: relative;
     display: block;
@@ -54,7 +67,7 @@
   #intro-pc > p {
     position: relative;
     display: block;
-    width: 100%;
+    width: 92%;
     margin: 0 4.0rem 0 2.0rem;
     padding: 0 0 0 0;
   }
@@ -258,6 +271,20 @@
   /*#intro-sp {
     display: none;
   }*/
+
+  details {
+    position: relative;
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  details > summary {
+    position: relative;
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-style: italic;
+  }
 
   #introduction {
     display: block;

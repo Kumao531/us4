@@ -182,7 +182,7 @@
   .service-explain > h5 {
     position: relative;
     display: block;
-    margin: 0 0 0 0;
+    margin: 0 0 0.3rem 0;
     padding: 0 0 0 0;
   }
   .service-explain > p {
@@ -197,6 +197,11 @@
     display: block;
     margin: 0 0 0 0;
     padding: 0 0 0.5rem 3.0rem;
+  }
+
+  /* フッター高さ調整 */
+  #footer-belt-pc {
+    height: 27.5rem;
   }
 
 }

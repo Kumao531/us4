@@ -187,8 +187,8 @@
   /* 額ボタンをまとめるFlexbox */
   #menu-selection {
     position: absolute;
-    align-content: center;
-    margin: 0;
+    display: block;
+    width: 100%;
     padding: 0;
     top: 0;
   }
@@ -204,16 +204,19 @@
     z-index: 51;
     width: 70%;
     margin: 3rem auto 0 auto;
-    padding: 0;
   }
 
   .menu-button > a {
+    position: relative;
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto 0 auto;
+    text-align: center;
   }
 
   .menu-button > a > img {
+    position: relative;
+    display: block;
+    margin: 0;
     width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   }
@@ -240,6 +243,11 @@
     font-weight: 700;
     line-height: 1.9rem;
     text-align: center;
+  }
+
+  /* フッター高さ調整 */
+  #footer-belt-pc {
+    height: 27.5rem;
   }
 
 }

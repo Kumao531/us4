@@ -155,4 +155,10 @@
     margin: 0 0 1rem 0;
     padding: 0 0 0 0;
   }
+
+  /* フッター高さ調整 */
+  #footer-belt-pc {
+    height: 27.5rem;
+  }
+
 }

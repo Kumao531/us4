@@ -472,4 +472,9 @@
     text-align: right;
   }
 
+  /* フッター高さ調整 */
+  #footer-belt-pc {
+    height: 27.5rem;
+  }
+
 }
