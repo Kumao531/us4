@@ -188,7 +188,10 @@
     min-width: 768px;
     max-width: 1080px;
     height: 80px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 1rem auto;
+    border-bottom-style: inset;
+    border-width: 2px;
+    border-color: #4b1b9a;
   }
 
    /* スマホ用ナビを非表示 */
@@ -582,6 +585,19 @@
   body {
     min-width: 375px;
     margin: 0;
+  }
+
+  /* ヘッダー */
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto 0 auto;
+    border-bottom-style: inset;
+    border-width: 2px;
+    border-color: #4b1b9a;
   }
 
   /* スマホ用ナビを非表示 */
