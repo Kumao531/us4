@@ -53,7 +53,15 @@
 
   .label > h4 {
     margin: 0;
-    padding: 1.5rem 0 0 0;
+    padding: 1.5rem 0 0.5rem 0;
+  }
+  .label > h4::after {
+    position: relative;
+    top: -0.5rem;
+    content: url("../images/Border/blueLine01.png");
+    margin-left: 1.0rem;
+    vertical-align: top;
+    opacity: 0.4;
   }
 
   .address {
@@ -126,13 +134,21 @@
   }
 
   .label > h4 {
-    margin: 0;
-    padding: 1.5rem 0 0 0;
+    margin: 1.0rem 0 0 0;
+    padding: 0 0 0 0;
+  }
+  .label > h4::after {
+    position: relative;
+    top: -0.35rem;
+    content: url("../images/Border/blueLine02.png");
+    margin-left: 1.0rem;
+    vertical-align: top;
+    opacity: 0.4;
   }
 
   .address {
     margin-top: 0.2rem;
-    padding-bottom: 0.2rem
+    padding-bottom: 0.7rem
   }
   .address > p {
     margin: 0 0 0 1.0rem;

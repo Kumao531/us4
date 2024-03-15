@@ -22,7 +22,9 @@
   }
 
   .oneline-query {
+    position: relative;
     display: flex;
+    margin: 0 0 1.0rem 0;
   }
   .oneline-query > .label {
     margin: 0;
@@ -38,7 +40,9 @@
   }
 
   .manyline-query {
+    position: block;
     display: block;
+    margin: 0 0 1.0rem 0;
   }
   .manyline-query > .label > p {
     margin: 0;
@@ -94,6 +98,18 @@
     background-color: #fafafa;
     width: 400px;
     height: 200px;
+  }
+
+  /* 送信ボタン */
+  .send-btn {
+    position: relative;
+    display: block;
+    width: 15%;
+    margin: 0 0 0 0;
+    padding: 2.0rem 0 2.0rem 0.8%;
+  }
+  .send-btn > input {
+    width: 100%;
   }
 
 }
@@ -201,6 +217,18 @@
     background-color: #fafafa;
     width: 90%;
     height: 300px;
+  }
+
+  /* 送信ボタン */
+  .send-btn {
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 0 0 0;
+    padding: 5% 0 1.5rem 3.0%;
+  }
+  .send-btn > input {
+    width: 100%;
   }
 
 }

@@ -84,7 +84,7 @@
               <!-- 名前 -->
               <div id="name" class="oneline-query">
                 <div class="label">
-                  <p>名前<spam class="empasis-phrase"> 必須</spam>：</p>
+                  <p>お名前<spam class="empasis-phrase"> 必須</spam>：</p>
                 </div>
                 <div class="query">
                   <input id="username-obj" type="text" name="username" size="12" placeholder="入力してください..." class="contact-textbox" />
@@ -109,7 +109,7 @@
                   <p>電話番号：</p>
                 </div>
                 <div class="query">
-                  <input type="text" name="tel" size="13"  class="contact-textbox" placeholder="090-1234-5678" />
+                  <input id="telephone-no" type="text" name="tel-no" size="13"  class="contact-textbox" placeholder="090-1234-5678" />
                 </div>
               </div>
 
@@ -119,7 +119,7 @@
                   <p>電子メール<spam class="empasis-phrase"> 必須</spam>：</p>
                 </div>
                 <div class="query">
-                  <input type="text" name="email" size="28"  class="contact-textbox" placeholder="username@example.com" />
+                  <input id="mail-object" type="text" name="email" size="28"  class="contact-textbox" placeholder="username@example.com" />
                 </div>
               </div>
 
@@ -203,7 +203,7 @@
                   <p>「その他」を選ばれたときにはご入力ください<spam class="empasis-phrase"> 40文字以内</spam></p>
                 </div>
                 <div class="query">
-                  <input type="text" name="other-inquiry" size="40"  class="contact-textbox" placeholder="その他お問合せの目的..." />
+                  <input id="other-inquiry-object" type="text" name="other-inquiry" size="40"  class="contact-textbox" placeholder="その他お問合せの目的..." />
                 </div>
               </div>
 
@@ -214,11 +214,11 @@
                 </div>
                 <div class="query">
                   <div class="pc-query">
-                    <textarea class="inquiry-is contact-textarea" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="80"
+                    <textarea class="inquiry-is contact-textarea" id="inquiry-is contact-textarea-object" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="80"
                       rows="10"></textarea>
                   </div>
                   <div class="sp-query">
-                    <textarea class="inquiry-is contact-textarea" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="40"
+                    <textarea class="inquiry-is contact-textarea" id="inquiry-is contact-textarea-object-sp" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="40"
                       rows="20"></textarea>
                   </div>
                 </div>
@@ -226,7 +226,7 @@
 
               <!-- 問合せ送信ボタン -->
               <div class="send-btn">
-                <input id="submit" type="button" value="送信" />
+                <input id="submit" type="image" src="./images/Button/button-send-noactive.png" alt="送信ボタン" />
               </div>
 
             </form>
@@ -292,7 +292,6 @@
 
         </div>
 
-        <script src="./js/common.js"></script>
       </footer>
 
     </main>
