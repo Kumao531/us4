@@ -97,9 +97,9 @@
                   <p>性別<spam class="empasis-phrase"> 必須</spam>：</p>
                 </div>
                 <div class="query">
-                  <input type="radio" name="sex" value="male"><spam>男性　</spam>
-                  <input type="radio" name="sex" value="female"><spam>女性　</spam>
-                  <input type="radio" name="sex" value="other"><spam>その他　</spam>
+                  <label><input type="radio" name="sex" value="male">男性　</label>
+                  <label><input type="radio" name="sex" value="female">女性　</label>
+                  <label><input type="radio" name="sex" value="other">その他　</label>
                 </div>
               </div>
 
@@ -129,57 +129,37 @@
                   <p>どこでミカゲＩＴラボを知りましたか？<spam class="empasis-phrase"> 1つ以上選択</spam></p>
                 </div>
                 <!-- PC用表示 -->
-                <div class="pc-query" class="query">
+                <div class="pc-query query">
                   <div class="select-query">
-                    <input type="checkbox" name="whereis" value="家族">
-                    <spam class="chk-spam">家族から　　</spam>
-                    <input type="checkbox" name="whereis" value="知人">
-                    <spam class="chk-spam">知人から　　</spam>
-                    <input type="checkbox" name="whereis" value="クチコミ">
-                    <spam class="chk-spam">クチコミから</spam>
+                    <label><input type="checkbox" name="whereis" value="家族">家族から　　</label>
+                    <label><input type="checkbox" name="whereis" value="知人">知人から　　</label>
+                    <label><input type="checkbox" name="whereis" value="クチコミ">クチコミから</label>
                   </div>
                   <div class="select-query">
-                    <input type="checkbox" name="whereis" value="ネット検索">
-                    <spam class="chk-spam">ネットを検索して　</spam>
-                    <input type="checkbox" name="whereis" value="ネット記事">
-                    <spam class="chk-spam">ネットの記事から　</spam>
-                    <input type="checkbox" name="whereis" value="SNS">
-                    <spam class="chk-spam">SNSで見かけた　</spam><br>
-                    <input type="checkbox" name="whereis" value="他サイト">
-                    <spam class="chk-spam">ほかのサイトで知った</spam>
+                    <label><input type="checkbox" name="whereis" value="ネット検索">ネットを検索して　</label>
+                    <label><input type="checkbox" name="whereis" value="ネット記事">ネットの記事から　</label>
+                    <label><input type="checkbox" name="whereis" value="SNS">SNSで見かけた　</label><br>
+                    <label><input type="checkbox" name="whereis" value="他サイト">ほかのサイトで知った</label>
                   </div>
                   <div class="select-query">
-                    <input type="checkbox" name="whereis" value="雑誌">
-                    <spam class="chk-spam">雑誌で見た　　</spam>
-                    <input type="checkbox" name="whereis" value="ネット広告">
-                    <spam class="chk-spam">インターネット広告　　</spam>
-                    <input type="checkbox" name="whereis" value="ダイレクト">
-                    <spam class="chk-spam">ダイレクト・メール</spam>
+                    <label><input type="checkbox" name="whereis" value="雑誌">雑誌で見た　　</label>
+                    <label><input type="checkbox" name="whereis" value="ネット広告">インターネット広告　　</label>
+                    <label><input type="checkbox" name="whereis" value="ダイレクト">ダイレクト・メール</label>
                   </div>
                 </div>
                 <!-- スマフォ用表示 -->
-                <div class="sp-query" class="query">
+                <div class="sp-query query">
                   <div class="select-query">
-                    <input type="checkbox" name="whereis" value="家族">
-                    <spam class="chk-spam">家族から　　</spam>
-                    <input type="checkbox" name="whereis" value="知人">
-                    <spam class="chk-spam">知人から　　</spam><br>
-                    <input type="checkbox" name="whereis" value="クチコミ">
-                    <spam class="chk-spam">クチコミから</spam>
-                    <input type="checkbox" name="whereis" value="ネット検索">
-                    <spam class="chk-spam">ネットを検索して　</spam><br>
-                    <input type="checkbox" name="whereis" value="ネット記事">
-                    <spam class="chk-spam">ネットの記事から　</spam>
-                    <input type="checkbox" name="whereis" value="SNS">
-                    <spam class="chk-spam">SNSで見かけた　</spam><br>
-                    <input type="checkbox" name="whereis" value="他サイト">
-                    <spam class="chk-spam">ほかのサイトで知った</spam>
-                    <input type="checkbox" name="whereis" value="雑誌">
-                    <spam class="chk-spam">雑誌で見た　　</spam><br>
-                    <input type="checkbox" name="whereis" value="ネット広告">
-                    <spam class="chk-spam">インターネット広告　　</spam><br>
-                    <input type="checkbox" name="whereis" value="ダイレクト">
-                    <spam class="chk-spam">ダイレクト・メール</spam>
+                    <label><input type="checkbox" name="whereis" value="家族">家族から　　</label>
+                    <label><input type="checkbox" name="whereis" value="知人">知人から</label><br>
+                    <label><input type="checkbox" name="whereis" value="クチコミ">クチコミから　</label>
+                    <label><input type="checkbox" name="whereis" value="ネット検索">ネットを検索して</label><br>
+                    <label><input type="checkbox" name="whereis" value="ネット記事">ネットの記事から　</label>
+                    <label><input type="checkbox" name="whereis" value="SNS">SNSで見かけた</label><br>
+                    <label><input type="checkbox" name="whereis" value="他サイト">ほかのサイトで知った　</label>
+                    <label><input type="checkbox" name="whereis" value="雑誌">雑誌で見た</label><br>
+                    <label><input type="checkbox" name="whereis" value="ネット広告">インターネット広告</label><br>
+                    <label><input type="checkbox" name="whereis" value="ダイレクト">ダイレクト・メール</label>
                   </div>
                 </div>
 
@@ -191,7 +171,7 @@
                   <p>お問い合わせの種類<spam class="empasis-phrase"> 必須</spam>：</p>
                 </div>
                 <div class="query">
-                  <select name="inquiry-purpose">
+                  <select id="inquiry-purpose" name="inquiry-purpose">
                     <option value="問合せ">お問い合わせ</option>
                     <option value="要望">ご要望</option>
                     <option value="意見">ご意見</option>
@@ -214,11 +194,11 @@
                 </div>
                 <div class="query">
                   <div class="pc-query">
-                    <textarea class="inquiry-is contact-textarea" id="inquiry-is contact-textarea-object" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="80"
+                    <textarea id="contact-textarea" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="80"
                       rows="10"></textarea>
                   </div>
                   <div class="sp-query">
-                    <textarea class="inquiry-is contact-textarea" id="inquiry-is contact-textarea-object-sp" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="40"
+                    <textarea id="contact-textarea-sp" placeholder="ご記入ください..." name="inquiry-message" maxlength="800" cols="40"
                       rows="20"></textarea>
                   </div>
                 </div>
@@ -299,6 +279,11 @@
     <!-- JQuery読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Validationの読み込み -->
+    <!--
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    -->
     <!-- 入力チェック用JavaScript読み込み -->
     <script src="./js/inquiry.js"></script>
 

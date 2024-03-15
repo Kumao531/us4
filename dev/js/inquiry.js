@@ -41,6 +41,30 @@ $(function () {
     inputCheck();
   });
 
+  // 必須のラジオボタンが押されたときにフォームのチェックを行なう
+  $('input[name="sex"]:radio').change(function () {
+    inputCheck();
+  });
+
+  // 必須のチェックボックスでチェックのイベントがあったときにチェックを行なう
+  $('input[name="whereis"]:checkbox').change(function () {
+    inputCheck();
+  });
+
+  // セレクトボックスが選択の変更を行なうイベントがあったときにチェックを行なう
+  $('#inquiry-purpose').change(function () {
+    inputCheck();
+  });
+
+  // 必須なテキストエリアで変更のイベントがあったときにチェックを行なう(PC用)
+  $("#contact-textarea").on("change",function() {
+    inputCheck();
+  });
+  // 必須なテキストエリアで変更のイベントがあったときにチェックを行なう(SP用)
+  $("#contact-textarea-sp").on("change",function() {
+    inputCheck();
+  });
+
   /* 入力チェック */
   function inputCheck() {
     console.log('inputCheck関数の呼び出し');
@@ -66,12 +90,14 @@ $(function () {
 
     /* 「性別」のチェック */
     /* どこにもチェックが入っていなかったらエラー */
-    if ($('#sex').prop('checked') == false) {
+    if ( $('input[name="sex"]:checked').parent().text() == '' ) {
       // 未チェックでエラー
+      $('#sex').css('background-color', '#f79999');
       error = true;
       message += '性別にチェックを入れてください。\n';
     } else {
       // エラーなし
+      $('#sex').css('background-color', '#ffffff');
     }
 
     /* 「電話番号」のチェック */
@@ -100,16 +126,67 @@ $(function () {
       $('#mail-object').css('background-color', '#fafafa');
     }
 
-    /* 「お問い合わせの種類の「その他」欄」のチェック(PC用) */
-    /* 入力されていることのチェック */
-    if ($('#other-inquiry-object').val() == '') {
-      // 空なのでエラー
-      $('#other-inquiry-object').css('background-color', '#f79999');
+    /* 「どこで知ったか」のチェックボックスのチェック */
+    /* 1つ以上のチェックがされていることのチェック */
+    // チェックされている項目がなければエラー
+    if ( $('input[name="whereis"]:checked').parent().text() == '' ) {
+      $('#where').css('background-color', '#f79999');
       error = true;
-      message += '「お問い合わせの種類」が「その他」ですので「その他」の欄にお問い合わせの目的を入力してください。\n';
+      message += 'ミカゲITラボをどこで知ったのかのチェックボックスにチェックが入っていません。\n';
     } else {
       // エラーなし
-      $('#other-inquiry-object').css('background-color', '#fafafa');
+      $('#where').css('background-color', '#fafafa');
+    }
+
+    /* 「お問い合わせの種類」が「その他」のときの「目的の記入欄」のチェック */
+    /* 「お問い合わせの種類」が「その他」であるかのチェック */
+    if ( $('#inquiry-purpose').val() == 'その他' ) {
+      /* 入力されていることのチェック */
+      if ($('#other-inquiry-object').val() === '') {
+        // 空なのでエラー
+        $('#other-inquiry-object').css('background-color', '#f79999');
+        error = true;
+        message += '「お問い合わせの種類」が「その他」ですので「その他」の欄にお問い合わせの目的を入力してください。\n';
+      } else {
+        // エラーなし
+        $('#other-inquiry-object').css('background-color', '#fafafa');
+      }
+    }
+    /* 「お問い合わせの種類」が「その他」でないとき */
+    else {
+      /* 入力されていないことのチェック */
+      if ($('#other-inquiry-object').val() != '') {
+        // 「その他」でないのに「目的の記入欄」も記入されているのでエラー
+        $('#other-inquiry-object').css('background-color', '#f79999');
+        error = true;
+        message += '「お問い合わせの種類」が「その他」でないのですが、「その他」のときの「問い合わせの目的」も入力されています。\n';
+      } else {
+        // エラーなし
+        $('#other-inquiry-object').css('background-color', '#fafafa');
+      }
+    }
+
+    /* 「お問い合わせの内容」のチェック(PC用) */
+    /* 入力されていることのチェック */
+    if ( $('#contact-textarea').val().length === 0 ) {
+      // 空ならばエラー
+      $('#contact-textarea').css('background-color', '#f79999');
+      error = true;
+      message += '「お問い合わせの内容」を入力してください。\n';
+    } else {
+      // エラーなし
+      $('#contact-textarea').css('background-color', '#fafafa');
+    }
+    /* 「お問い合わせの内容」のチェック(SP用) */
+    /* 入力されていることのチェック */
+    if ( $('#contact-textarea-sp').val().length === 0 ) {
+      // 空ならばエラー
+      $('#contact-textarea-sp').css('background-color', '#f79999');
+      error = true;
+      message += '「お問い合わせの内容」を入力してください。\n';
+    } else {
+      // エラーなし
+      $('#contact-textarea-sp').css('background-color', '#fafafa');
     }
 
     /* エラー状態の有無で送信ボタンを切り替え */
