@@ -53,13 +53,27 @@
     padding-left: 5.0rem;
   }
 
-  .sp-query {
-    display: none;
+  .area-top-margin {
+    margin-top: 1.0rem;
   }
 
   #purpose-other {
     margin: 0;
     padding-left: 5.0rem;
+  }
+
+  #query-content {
+    position: relative;
+    display: block;
+    width: 40rem;
+    margin: 0 0 1.0rem 0;
+    padding: 0 0 0 0;
+  }
+  #contact-textarea {
+    position: relative;
+    display: block;
+    margin: 0.5rem 0 0 0;
+    width: 100%;
   }
 
   /* タイトルに付随する注釈文字の体裁 */
@@ -169,16 +183,26 @@
     padding-bottom: 0.5rem;
   }
 
-  .pc-query {
-    display: none;
-  }
-
   #purpose-other {
     margin: 0;
     padding-left: 1.0rem;
   }
   #purpose-other > p {
     font-size: 0.75rem;
+  }
+
+  #query-content {
+    position: relative;
+    display: block;
+    width: 20rem;
+    margin: 1.0rem 0 1.0rem 0;
+    padding: 0 0 0 0;
+  }
+  #contact-textarea {
+    position: relative;
+    display: block;
+    margin: 0.5rem 0 0 0;
+    width: 100%;
   }
 
  /* タイトルに付随する注釈文字の体裁 */

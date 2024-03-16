@@ -60,10 +60,6 @@ $(function () {
   $("#contact-textarea").on("change",function() {
     inputCheck();
   });
-  // 必須なテキストエリアで変更のイベントがあったときにチェックを行なう(SP用)
-  $("#contact-textarea-sp").on("change",function() {
-    inputCheck();
-  });
 
   /* 入力チェック */
   function inputCheck() {
@@ -83,6 +79,12 @@ $(function () {
       $('#username-obj').css('background-color', '#f79999');
       error = true;
       message += 'お名前を入力してください。\n';
+      /* 全角チェック */
+    } else if (!$('#username-obj').val().match(/^[ぁ-んァ-ヶー一-龠 　\r\n\t]+$/)) {
+      // エラー処理
+      $('#username-obj').css('background-color', '#f79999');
+      error = true;
+      message += 'お名前は全角入力してください。\n';
     } else {
       // エラーなし
       $('#username-obj').css('background-color', '#fafafa');
@@ -90,7 +92,7 @@ $(function () {
 
     /* 「性別」のチェック */
     /* どこにもチェックが入っていなかったらエラー */
-    if ( $('input[name="sex"]:checked').parent().text() == '' ) {
+    if ($('input[name="sex"]:checked').parent().text() == '') {
       // 未チェックでエラー
       $('#sex').css('background-color', '#f79999');
       error = true;
@@ -102,11 +104,11 @@ $(function () {
 
     /* 「電話番号」のチェック */
     /* 未入力は「ok」。入力されたたらフォーマット形式を確認 */
-    if ( $('#telephone-no').val() != '' &&  $('#telephone-no').val().indexOf('-') == -1 ) {
-      // 入力された電話のフォーマット形式に誤りがあり、エラー
+    if ($('#telephone-no').val() != '' && !$('#telephone-no').val().match(/^(0[5-9]0[-(]?[0-9]{4}[-)]?[0-9]{4}|0120[-]?\d{1,3}[-]?\d{4}|050[-]?\d{4}[-]?\d{4}|0[1-9][-]?\d{1,4}[-]?\d{1,4}[-]?\d{4})*$/)) {
+      // 電話番号の正規表現（固定電話、携帯、フリーダイヤル、IP電話を考慮）が正しくないとき、エラー
       $('#telephone-no').css('background-color', '#f79999');
       error = true;
-      message += '電話番号に「-」が含まれていません。\n';
+      message += '「電話番号」が正しくありません。\n';
     } else {
       // エラーなし
       $('#telephone-no').css('background-color', '#fafafa');
@@ -114,13 +116,15 @@ $(function () {
 
     /* 「電子メール」のチェック */
     /* 入力されていることのチェック */
-    if ($('#mail-object').val() == '' ||
-        $('#mail-object').val().indexOf('@') == -1 ||
-        $('#mail-object').val().indexOf('.') == -1 ) {
-      // 空か、アドレス形式が正しくないのでエラー
+    if ($('#mail-object').val() === '') {
+      // 未入力でエラー
       $('#mail-object').css('background-color', '#f79999');
       error = true;
-      message += '電子メールアドレスが未記入か、あるいはアドレスに「@」「.」が含まれていません。\n';
+      message += '「電子メール」が未入力です。\n';
+    } else if ( ! $('#mail-object').val().match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/) ) {
+      $('#mail-object').css('background-color', '#f79999');
+      error = true;
+      message += '「電子メール」のアドレスが正しく入力されていません。\n';
     } else {
       // エラーなし
       $('#mail-object').css('background-color', '#fafafa');
@@ -147,6 +151,11 @@ $(function () {
         $('#other-inquiry-object').css('background-color', '#f79999');
         error = true;
         message += '「お問い合わせの種類」が「その他」ですので「その他」の欄にお問い合わせの目的を入力してください。\n';
+      } else if ( $('#other-inquiry-object').val().length > 40 ) {
+        // 入力が40字を超えたらエラー
+        $('#other-inquiry-object').css('background-color', '#f79999');
+        error = true;
+        message += '「お問い合わせの種類」は40文字以内にしてください。\n';
       } else {
         // エラーなし
         $('#other-inquiry-object').css('background-color', '#fafafa');
@@ -166,27 +175,21 @@ $(function () {
       }
     }
 
-    /* 「お問い合わせの内容」のチェック(PC用) */
+    /* 「お問い合わせの内容」のチェック */
     /* 入力されていることのチェック */
     if ( $('#contact-textarea').val().length === 0 ) {
       // 空ならばエラー
       $('#contact-textarea').css('background-color', '#f79999');
       error = true;
       message += '「お問い合わせの内容」を入力してください。\n';
+      } else if ( $('#contact-textarea').val().length > 800 ) {
+        // 入力が40字を超えたらエラー
+        $('#contact-textarea').css('background-color', '#f79999');
+        error = true;
+        message += '「お問い合わせの内容」は800文字以内にしてください。\n';
     } else {
       // エラーなし
       $('#contact-textarea').css('background-color', '#fafafa');
-    }
-    /* 「お問い合わせの内容」のチェック(SP用) */
-    /* 入力されていることのチェック */
-    if ( $('#contact-textarea-sp').val().length === 0 ) {
-      // 空ならばエラー
-      $('#contact-textarea-sp').css('background-color', '#f79999');
-      error = true;
-      message += '「お問い合わせの内容」を入力してください。\n';
-    } else {
-      // エラーなし
-      $('#contact-textarea-sp').css('background-color', '#fafafa');
     }
 
     /* エラー状態の有無で送信ボタンを切り替え */
