@@ -6,6 +6,10 @@
 
   /* コンテンツ主部 */
 
+  .sp-query {
+    display: none;
+  }
+
   #inquiry-area {
     width: 90%;
     margin: 0 auto 0 auto;
@@ -135,6 +139,10 @@
 @media screen and (max-width: 767px) {
 
   /* コンテンツ主部 */
+
+  .pc-query {
+    display: none;
+  }
 
   #inquiry-area {
     width: 95%;

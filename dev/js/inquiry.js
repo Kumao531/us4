@@ -203,7 +203,7 @@ $(function () {
   }
 
   /* チェック判定結果の作成 */
-  result = {
+  let result = {
     error: error,
     message: message
   }
